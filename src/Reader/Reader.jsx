@@ -19,15 +19,13 @@ class Reader extends Component {
     ).isRequired,
   };
 
-  onIncreaseClick = e => {
-    e.preventDefault();
+  onIncreaseClick = () => {
     this.setState(state => ({
       publicationIndex: state.publicationIndex + 1,
     }));
   };
 
-  onDecreaseClick = e => {
-    e.preventDefault();
+  onDecreaseClick = () => {
     this.setState(state => ({
       publicationIndex: state.publicationIndex - 1,
     }));
